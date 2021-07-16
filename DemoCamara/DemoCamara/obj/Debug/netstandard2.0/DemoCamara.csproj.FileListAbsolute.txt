@@ -1,0 +1,14 @@
+D:\.NET\Camara\DemoCamara\DemoCamara\bin\Debug\netstandard2.0\DemoCamara.deps.json
+D:\.NET\Camara\DemoCamara\DemoCamara\bin\Debug\netstandard2.0\DemoCamara.dll
+D:\.NET\Camara\DemoCamara\DemoCamara\bin\Debug\netstandard2.0\DemoCamara.pdb
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\Views\MenuView.xaml.g.cs
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\Views\PhotoView.xaml.g.cs
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\Views\VideoView.xaml.g.cs
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\DemoCamara.AssemblyInfoInputs.cache
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\DemoCamara.AssemblyInfo.cs
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\DemoCamara.csproj.CoreCompileInputs.cache
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\XamlC.stamp
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\DemoCamara.dll
+D:\.NET\Camara\DemoCamara\DemoCamara\obj\Debug\netstandard2.0\DemoCamara.pdb

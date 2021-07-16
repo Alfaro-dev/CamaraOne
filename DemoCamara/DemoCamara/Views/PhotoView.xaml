@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:DemoCamara.ViewModels"
+             mc:Ignorable="d"
+             Title="Pictures"
+             x:Class="DemoCamara.Views.PhotoView">
+
+    <ContentPage.BindingContext>
+        <vm:PhotoViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label HorizontalOptions="Center" Text="Save your image." FontSize="Title" Padding="10" />
+            <Entry x:Name="txtNameImage" WidthRequest="300" HorizontalOptions="Center" Placeholder="Name image"/>
+            <Button x:Name="btnSaveGallery" WidthRequest="300" HorizontalOptions="Center" Text="Get image" Clicked="btnSaveGallery_Clicked"/>
+            <Button x:Name="btnSaveImage" WidthRequest="300" HorizontalOptions="Center" Text="Take image" Clicked="btnSaveImage_Clicked"/>
+            <Label HorizontalOptions="Center" Text="List images" FontSize="Subtitle"/>
+            <ListView x:Name="listImages" 
+                      WidthRequest="300" 
+                      HorizontalOptions="Center"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height= "*"/>
+                                    <RowDefinition Height= "*"/>
+                                    <RowDefinition Height= "*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.RowSpan="4"
+                                       Grid.Column="0" 
+                                       Aspect="AspectFill"
+                                       WidthRequest="100"
+                                       HeightRequest="100"
+                                       Source="{Binding UrlImage}">
+                                </Image>
+                                <Label Text="Image name: " 
+                                       Grid.Column="1" 
+                                       Grid.Row="0" 
+                                       TextColor="Blue" 
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding NameImage}" 
+                                       Grid.Column="1"
+                                       Grid.Row="1"/>
+                                <Label Text="User: " 
+                                       Grid.Column="1"
+                                       Grid.Row="2" 
+                                       TextColor="Blue" 
+                                       FontAttributes="Bold" />
+                                <Label Text="{Binding NameUser}" 
+                                       Grid.Row="3" 
+                                       Grid.Column="1"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
